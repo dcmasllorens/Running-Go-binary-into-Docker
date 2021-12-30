@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  myapp:
+    container_name: docker-api
+    build: .
+    image: docker-api
+    volumes:
+      - ./logs_api/:/go/bin/logs/
